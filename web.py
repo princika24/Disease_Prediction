@@ -7,9 +7,9 @@ st.set_page_config(page_title='Prediction Of Disease Outbreak',
                    layout='wide',
                    page_icon='👨🏻‍⚕️')
 
-diabetes_model=pickle.load(open(r"Training_models\diabetes_model.sav","rb"))
-heart_model=pickle.load(open(r"Training_models\heart_model.sav","rb"))
-parkinsons_model=pickle.load(open(r"Training_models\parkinsons_model.sav","rb"))
+diabetes_model=pickle.load(open(r"./Training_models/diabetes_model.sav","rb"))
+heart_model=pickle.load(open(r"./Training_models/heart_model.sav","rb"))
+parkinsons_model=pickle.load(open(r"./Training_models/parkinsons_model.sav","rb"))
 
 with st.sidebar:
     selected=option_menu('Prediction Of Disease Outbreak System', ['Diabetes Prediction','Heart Disease Prediction','Parkinsons Disease Prediction'],
